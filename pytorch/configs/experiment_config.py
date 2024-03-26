@@ -26,14 +26,14 @@ def channeltransformer_sgdr_bit_variable():
         },
         'model_options': {
             'n_blocks':3, 'd_model':512, 'nhead':8, 'dim_feedforward':2048, 
-            'n_tx':64, 'n_rx':16, 'n_carrier':128, 'dim_feedback':512
+            'n_tx':64, 'n_rx':16, 'n_carrier':128, 'dim_feedback':256
         },
         'temp_schedule': {
             'start_temp': 10,
             'final_temp': 0.01
         },
         'trainer_options': {
-            'max_bits' : 512,
+            'max_bits' : 256,
             'eval_bits' : 128,
             'epochs' : 500, 
             'loss' : MSE_loss,
@@ -81,14 +81,14 @@ def channeltransformer_sgdr_bit_variable_blockage():
         },
         'model_options': {
             'n_blocks':3, 'd_model':512, 'nhead':8, 'dim_feedforward':2048, 
-            'n_tx':64, 'n_rx':16, 'n_carrier':128, 'dim_feedback':128
+            'n_tx':64, 'n_rx':16, 'n_carrier':128, 'dim_feedback':512
         },
         'temp_schedule': {
             'start_temp': 10,
             'final_temp': 0.01
         },
         'trainer_options': {
-            'max_bits' : 128,
+            'max_bits' : 512,
             'eval_bits' : 128,
             'epochs' : 2000, 
             'loss' : MSE_loss,
