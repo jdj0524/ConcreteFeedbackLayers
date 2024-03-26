@@ -20,8 +20,8 @@ def channeltransformer_sgdr_bit_variable():
             'files_dir':'/home/automatic/DeepMIMO_Datasets/O1_140_8b84b4/'
         },
         'data_split': {
-            'train': 0.7, 
-            'val': 0.1, 
+            'train': 0.6, 
+            'val': 0.2, 
             'test': 0.2
         },
         'model_options': {
@@ -75,8 +75,8 @@ def channeltransformer_sgdr_bit_variable_blockage():
             'files_dir':'/home/automatic/DeepMIMO_Datasets/O1_28B/'
         },
         'data_split': {
-            'train': 0.7, 
-            'val': 0.1, 
+            'train': 0.6, 
+            'val': 0.2, 
             'test': 0.2
         },
         'model_options': {
