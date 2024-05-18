@@ -14,7 +14,7 @@ def channeltransformer_sgdr_bit_variable():
     data = DeepMIMOSampleDataset
     options = {
         'wandb_project_name': 'BitChannelTransformer',
-        'save_dir': '/home/automatic/projects/ChannelTransformer/checkpoints/',
+        'save_dir': '/home/automatic/projects/ConcreteFeedbackLayers/checkpoints/O1_140/',
         'batch_size': 256,
         'data_options': {
             'files_dir':'/home/automatic/DeepMIMO_Datasets/O1_140_8b84b4/'
@@ -69,7 +69,7 @@ def channeltransformer_sgdr_bit_variable_blockage():
     data = DeepMIMOSampleDataset
     options = {
         'wandb_project_name': 'BitChannelTransformer',
-        'save_dir': '/home/automatic/projects/ChannelTransformer/checkpoints/',
+        'save_dir': '/home/automatic/projects/ConcreteFeedbackLayers/checkpoints/O1_28B/',
         'batch_size': 256,
         'data_options': {
             'files_dir':'/home/automatic/DeepMIMO_Datasets/O1_28B/'
