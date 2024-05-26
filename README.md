@@ -12,7 +12,6 @@ This repository contains the implementation of Concrete Feedback Layers and the 
 - [Running Experiments](#running-experiments)
 - [Results](#results)
 - [Checkpoints](#checkpoints)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
@@ -128,4 +127,7 @@ git lfs pull
 ```
 
 These checkpoints can be loaded and used to continue training or for evaluation purposes as specified in the configuration files.
-```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
