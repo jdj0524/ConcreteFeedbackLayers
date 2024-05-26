@@ -35,7 +35,7 @@ def channeltransformer_sgdr_bit_variable():
         'trainer_options': {
             'max_bits' : 256,
             'eval_bits' : 128,
-            'epochs' : 500, 
+            'epochs' : 2000, 
             'loss' : MSE_loss,
              'optimizer_cls' : torch.optim.AdamW,
              'gpu' : 0, 
