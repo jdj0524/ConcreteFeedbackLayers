@@ -27,7 +27,7 @@ class BaseTrainer(Trainer):
         if self.best_loss is None or self.best_loss > cur_loss:
             self.best_loss = cur_loss
             self.best_model = deepcopy(self.model)
-            torch.save(self.best_model.state_dict(), self.options['save_dir'] + self.best_model.get_save_name())
+            torch.save(self.best_model.state_dict(), self.options['save_dir'] + self.best_model.get_save_name() + '.ckpt')
 
     def train(self):
         self.model = self.model.to(device=self.gpu)
