@@ -11,6 +11,7 @@ This repository contains the implementation of Concrete Feedback Layers and the 
   - [Sample Configuration for O1_140 Scenario](#sample-configuration-for-o1_140-scenario)
 - [Running Experiments](#running-experiments)
 - [Results](#results)
+- [Checkpoints](#checkpoints)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -111,3 +112,20 @@ Make sure the paths in the configuration file are correctly set to your dataset 
 
 After running the experiments, checkpoints will be saved in the directory specified in the configuration file (`save_dir`).
 Metrics during training and testing will be saved to WandB, in the project name provided in the configuration (`wandb_project_name`).
+
+## Checkpoints
+
+Pre-trained checkpoints for the O1_140 and O1_28B scenarios are provided in the `checkpoints/` directory at the project root. These checkpoints have been saved using `git-lfs` to manage large files. You can find the checkpoints in their respective subdirectories:
+
+- `checkpoints/O1_140/`
+- `checkpoints/O1_28B/`
+
+To use these checkpoints, ensure you have `git-lfs` installed and initialized in your local repository. For more information on `git-lfs`, visit [Git LFS](https://git-lfs.github.com/).
+
+```bash
+git lfs install
+git lfs pull
+```
+
+These checkpoints can be loaded and used to continue training or for evaluation purposes as specified in the configuration files.
+```
